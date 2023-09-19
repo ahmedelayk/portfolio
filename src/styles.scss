@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg-main: #F2F5F9;
+    --orange: #FF9C1B;
+    --red: #EC1B09;
+    --pacifico-font: 'Pacifico', cursive;
+    --poppins-font: 'Poppins', sans-serif;
+    --raleway-font: 'Raleway', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+// font sizes
+@for $i from 10 through 45 {
+    .fs-#{$i} {
+        font-size: 1px * $i;
+    }
+}
+
+// font-family classes
+.pacifico-font {
+    font-family: var(--pacifico-font);
+}
+
+.poppins-font {
+    font-family: var(--poppins-font);
+}
+
+.raleway-font {
+    font-family: var(--raleway-font);
+}
+
+// background-color classes
+.bg-main {
+    background-color: var(--bg-main);
+}
+
+// color classes
+.text-orange {
+    color: var(--orange);
+}
+
+.text-red {
+    color: var(--red);
+}
