@@ -1,0 +1,11 @@
+<nav class="py-3 mb-5 bg-white">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="mb-0 pacifico-font fs-24">Ahmed <span class="text-orange">Elayek</span></h1>
+        <div>
+            <div class="mode-icon-container cursor-pointer light-dark-mode">
+                <i class="ri-moon-line fs-20 mode-icon" *ngIf="mode === modeKey.light" (click)="changeMode(modeKey.dark)"></i>
+                <i class="ri-sun-line fs-20 mode-icon" *ngIf="mode === modeKey.dark" (click)="changeMode(modeKey.light)"></i>
+            </div>
+        </div>
+    </div>
+</nav>

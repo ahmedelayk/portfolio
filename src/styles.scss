@@ -1,26 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --bg-main: #F2F5F9;
+    --light-color: #F2F5F9;
+    --light-color-2: #E1E8EF;
+    --dark-color-1: #1a10037e;
     --orange: #FF9C1B;
     --red: #EC1B09;
     --pacifico-font: 'Pacifico', cursive;
     --poppins-font: 'Poppins', sans-serif;
     --raleway-font: 'Raleway', sans-serif;
 }
+// variables 
+$bg-main : #F2F5F9;
+// dark mode 
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
+    background-color: $bg-main;
     font-family: 'Pacifico', cursive;
     font-family: 'Poppins', sans-serif;
     font-family: 'Raleway', sans-serif;
 }
 
 // font sizes
-@for $i from 10 through 45 {
+@for $i from 10 through 50 {
     .fs-#{$i} {
         font-size: 1px * $i;
     }
@@ -41,7 +47,7 @@ body {
 
 // background-color classes
 .bg-main {
-    background-color: var(--bg-main);
+    background-color: $bg-main;
 }
 
 // color classes
@@ -51,4 +57,49 @@ body {
 
 .text-red {
     color: var(--red);
+}
+
+.text-dark-1 {
+    color: var(--dark-color-1);
+}
+
+
+// Font Weights
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+
+// Global
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+// dark mode 
+[data-layout-mode="dark"] {
+    // $bg-main: green
+    // .bg-main {
+    //     background-color: var(--bg-main);
+    // }
+}
+
+[data-topbar="dark"] {
+    $bg-main: green;
+    .bg-main {
+        background-color: red !important;
+    }
 }

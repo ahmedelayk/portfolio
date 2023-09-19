@@ -1,0 +1,36 @@
+.mode-icon-container {
+    border: 1px solid #DDD;
+    border-radius: 50%;
+
+    .mode-icon {
+        width: 56px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// .light-dark-mode {
+//     .ri-moon-line {
+//         display: block;
+//         background-color: red;
+//     }
+    
+//     .ri-sun-line {
+//         display: none;
+//     }
+// }
+
+// [data-layout-mode="dark"] {
+//     .light-dark-mode {
+//         .bx-moon {
+//             display: none;
+//         }
+
+//         .bx-sun {
+//             display: block;
+//             background-color: purple;
+//         }
+//     }
+// }

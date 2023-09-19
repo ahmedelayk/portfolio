@@ -1,0 +1,90 @@
+aside {
+    background-color: #FFF;
+    border-radius: 20px;
+
+    .name {
+        color: #0B0909;
+    }
+
+    .title {
+        font-weight: 500;
+        color: #0b09097a;
+    }
+
+    .social {
+
+        .links {
+
+            .link-item {
+
+                .link {
+                    background-color: #F2F7FC;
+                    padding: 10px 20px;
+                    border-radius: 8px;
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .3s;
+
+                    &:hover {
+                        background-color: #dadcdd;
+                    }
+
+                    i {}
+                }
+            }
+        }
+    }
+
+    .contact {
+        background-color: var(--light-color);
+        width: 80%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+
+        ul {
+            padding-left: 0;
+
+            li {
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid #E3E3E3;
+                }
+
+                .icon {
+                    color: var(--orange);
+                }
+
+                .text>h4:first-child {
+                    color: #1a10037c;
+                }
+
+                &:last-child {
+                    .down-btn {
+                        padding: 10px 20px;
+                        border-radius: 40px;
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        background-color: var(--orange);
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.linkedin-color {
+    color: #0077b5;
+}
+
+.github-color {
+    color: #0B0909;
+}
