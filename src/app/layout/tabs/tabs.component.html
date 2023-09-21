@@ -1,36 +1,31 @@
 <div class="d-flex justify-content-end align-items-center">
   <ul class="nav py-3 px-4 d-flex justify-content-end align-items-center gap-3">
     <li class="nav-item">
-      <a [routerLink]="['/home']" class="nav-link" (click)="setActiveTab('home')"
-        [ngClass]="{ active: activeTab == 'home' }">
+      <a [routerLink]="['/home']" routerLinkActive="active" class="nav-link" >
         <i class="ri-home-2-line fs-25 text-dark-1"></i>
         <span>home</span>
       </a>
     </li>
     <li class="nav-item">
-      <a [routerLink]="['/home/about']" class="nav-link" (click)="setActiveTab('about')"
-        [ngClass]="{ active: activeTab == 'about' }">
+      <a [routerLink]="['/about']" routerLinkActive="active" class="nav-link">
         <i class="ri-user-line fs-25 text-dark-1"></i>
         <span>about</span>
       </a>
     </li>
     <li class="nav-item">
-      <a [routerLink]="['/home/skills']" class="nav-link" (click)="setActiveTab('skills')"
-        [ngClass]="{ active: activeTab == 'skills' }">
+      <a [routerLink]="['/skills']" routerLinkActive="active" class="nav-link">
         <i class="ri-flashlight-line fs-25 text-dark-1"></i>
         <span>skills</span>
       </a>
     </li>
     <li class="nav-item">
-      <a [routerLink]="['/home/contact']" class="nav-link" (click)="setActiveTab('contact')"
-        [ngClass]="{ active: activeTab == 'contact' }">
+      <a [routerLink]="['/contact']" routerLinkActive="active" class="nav-link" >
         <i class="ri-contacts-book-line fs-25 text-dark-1"></i>
         <span>contact</span>
       </a>
     </li>
     <li class="nav-item">
-      <a [routerLink]="['/home/projects']" class="nav-link" (click)="setActiveTab('projects')"
-        [ngClass]="{ active: activeTab == 'projects' }">
+      <a [routerLink]="['/projects']" routerLinkActive="active" class="nav-link">
         <i class="ri-apps-fill fs-25 text-dark-1"></i>
         <span>projects</span>
       </a>

@@ -9,7 +9,7 @@ const routes: Routes = [
     pathMatch: "full"
   },
   {
-    path: "home",
+    path: "",
     component: LayoutComponent,
     loadChildren: ()=>import("./pages/pages.module").then(m=>m.PagesModule)
   },
