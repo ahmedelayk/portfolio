@@ -41,9 +41,15 @@ aside {
                     justify-content: center;
                     align-items: center;
                     transition: .3s;
+                    overflow: hidden;
 
                     &:hover {
                         background-color: #dadcdd;
+                    }
+
+                    &:hover i {
+                        animation-name: fadeInDown;
+                        animation-duration: .6s;
                     }
 
                     // i {}
@@ -65,6 +71,7 @@ aside {
             li {
                 padding-top: 10px;
                 padding-bottom: 10px;
+                transition: .3s;
 
                 &:not(:last-child) {
                     border-bottom: 1px solid #E3E3E3;
@@ -89,10 +96,45 @@ aside {
                         background-color: var(--orange);
                         color: #FFF;
                         transition: .3s;
+
                         &:hover {
                             background-color: rgb(216, 156, 45);
                         }
+
+                        &:hover i {
+                            animation: shakeY;
+                            animation-duration: 2s;
+                            animation-iteration-count: infinite;
+                        }
+
+                        // i {
+                        //     &:hover {
+                        //     }
+
+                        // }
                     }
+                }
+
+                .icon {
+                    i {
+                        transition: .3s;
+                    }
+                }
+
+                &:hover {
+                    cursor: cell;
+                }
+
+                &:hover .icon>i {
+                    color: #0077b5;
+                }
+
+                .text {
+                    transition: .3s;
+                }
+
+                &:hover .text {
+                    transform: translatex(10px);
                 }
             }
         }

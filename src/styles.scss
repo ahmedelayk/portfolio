@@ -25,6 +25,11 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.line {
+    background-color: var(--orange);
+    height: 2px;
+    width: 252px;
+}
 // font sizes
 @for $i from 10 through 50 {
     .fs-#{$i} {
@@ -103,3 +108,11 @@ li {
         background-color: red !important;
     }
 }
+
+// bootstrap classes override
+.rounded {
+    border-radius: 20px !important;
+}
+
+
+// Animations

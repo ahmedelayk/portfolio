@@ -19,6 +19,11 @@
         justify-content: center;
         width: 80px;
         height: 66px;
+        &:hover i {
+            animation-name: backOutDown;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
     }
     
     .nav-link.active {
