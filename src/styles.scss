@@ -1,17 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700;800&display=swap');
 
+// :root {
+//     --light-color: #F2F5F9;
+//     --light-color-2: #E1E8EF;
+//     --dark-color-1: #1a10037e;
+//     --orange: #FF9C1B;
+//     --red: #EC1B09;
+//     --pacifico-font: 'Pacifico', cursive;
+//     --poppins-font: 'Poppins', sans-serif;
+//     --raleway-font: 'Raleway', sans-serif;
+// }
+
+
 :root {
-    --light-color: #F2F5F9;
-    --light-color-2: #E1E8EF;
-    --dark-color-1: #1a10037e;
-    --orange: #FF9C1B;
-    --red: #EC1B09;
+    $light-color: #F2F5F9;
+    $light-color-2: #E1E8EF;
+    $dark-color-1: #1a10037e;
+    $orange: #FF9C1B;
+    $red: #EC1B09;
+    $white: #FFF;
+    $gray-100: #212529;
+    // body
+    --light-color: #{$light-color};
+    --light-color-2: #{$light-color-2};
+    --dark-color-1: #{$dark-color-1};
+    --orange: #{$orange};
+    --red: #{$red};
+    --body-bg: #{$light-color};
+    --body-color: #{$light-color-2};
+    --white: #{$white};
+    --gray-100: #{$gray-100};
+    
     --pacifico-font: 'Pacifico', cursive;
     --poppins-font: 'Poppins', sans-serif;
     --raleway-font: 'Raleway', sans-serif;
 }
+
+[data-layout-mode="dark"] {
+    $light-color: #1a1d21;
+    $light-color-2: #1c4d4e;
+    $dark-color-1: #e4d5c27e;
+    $orange: #20e261;
+    $red: #eb0867;
+    $white: #292e32;
+    
+    $gray-100: #ced4da;
+    
+    // #1a1d21 // dark #212529
+    // #f3f3f9 //light #ced4da
+    // body
+    --light-color: #{$light-color};
+    --light-color-2: #{$light-color-2};
+    --dark-color-1: #{$dark-color-1};
+    --orange: #{$orange};
+    --red: #{$red};
+    --white: #{$white};
+    --gray-100: #{$gray-100};
+    // .bg-main {
+    //     background-color: var(--bg-main);
+    // }
+}
 // variables 
-$bg-main : #F2F5F9;
+// $bg-main : #F2F5F9;
 // dark mode 
 
 html {
@@ -19,7 +69,7 @@ html {
 }
 
 body {
-    background-color: $bg-main;
+    background-color: var(--light-color);
     font-family: 'Pacifico', cursive;
     font-family: 'Poppins', sans-serif;
     font-family: 'Raleway', sans-serif;
@@ -52,9 +102,12 @@ body {
 
 // background-color classes
 .bg-main {
-    background-color: $bg-main;
+    background-color: var(--light-color);
 }
 
+.bg-white {
+    background-color: var(--white) !important;
+}
 // color classes
 .text-orange {
     color: var(--orange);
@@ -62,6 +115,10 @@ body {
 
 .text-red {
     color: var(--red);
+}
+
+.text-dark {
+    color: var(--gray-100) !important;
 }
 
 .text-dark-1 {
@@ -95,12 +152,12 @@ li {
 
 
 // dark mode 
-[data-layout-mode="dark"] {
-    // $bg-main: green
-    // .bg-main {
-    //     background-color: var(--bg-main);
-    // }
-}
+// [data-layout-mode="dark"] {
+//     $bg-main: green;
+//     // .bg-main {
+//     //     background-color: var(--bg-main);
+//     // }
+// }
 
 [data-topbar="dark"] {
     $bg-main: green;
