@@ -1,7 +1,7 @@
 .mode-icon-container {
-    border: 1px solid var(--light-color-2);
+    border: 1px solid var(--orange);
     border-radius: 50%;
-    background-color: var(--light-color-2);
+    background-color: var(--orange);
 
     .mode-icon {
         width: 56px;
@@ -11,27 +11,3 @@
         align-items: center;
     }
 }
-
-// .light-dark-mode {
-//     .ri-moon-line {
-//         display: block;
-//         background-color: red;
-//     }
-    
-//     .ri-sun-line {
-//         display: none;
-//     }
-// }
-
-// [data-layout-mode="dark"] {
-//     .light-dark-mode {
-//         .bx-moon {
-//             display: none;
-//         }
-
-//         .bx-sun {
-//             display: block;
-//             background-color: purple;
-//         }
-//     }
-// }

@@ -1,68 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700;800&display=swap');
 
-// :root {
-//     --light-color: #F2F5F9;
-//     --light-color-2: #E1E8EF;
-//     --dark-color-1: #1a10037e;
-//     --orange: #FF9C1B;
-//     --red: #EC1B09;
-//     --pacifico-font: 'Pacifico', cursive;
-//     --poppins-font: 'Poppins', sans-serif;
-//     --raleway-font: 'Raleway', sans-serif;
-// }
-
-
 :root {
     $light-color: #F2F5F9;
     $light-color-2: #E1E8EF;
     $dark-color-1: #1a10037e;
     $orange: #FF9C1B;
+    $lemon: #20e261;
     $red: #EC1B09;
     $white: #FFF;
     $gray-100: #212529;
-    // body
+    // variables
     --light-color: #{$light-color};
     --light-color-2: #{$light-color-2};
     --dark-color-1: #{$dark-color-1};
     --orange: #{$orange};
+    --lemon: #{$lemon};
     --red: #{$red};
     --body-bg: #{$light-color};
     --body-color: #{$light-color-2};
     --white: #{$white};
     --gray-100: #{$gray-100};
-    
+    // fonts
     --pacifico-font: 'Pacifico', cursive;
     --poppins-font: 'Poppins', sans-serif;
     --raleway-font: 'Raleway', sans-serif;
 }
 
-[data-layout-mode="dark"] {
+[mode="dark"] {
     $light-color: #1a1d21;
-    $light-color-2: #1c4d4e;
-    $dark-color-1: #e4d5c27e;
+    $light-color-2: #212529;
+    $dark-color-1: #FFF;
     $orange: #20e261;
+    $lemon: #FF9C1B;
     $red: #eb0867;
     $white: #292e32;
-    
     $gray-100: #ced4da;
-    
-    // #1a1d21 // dark #212529
-    // #f3f3f9 //light #ced4da
-    // body
+    // variables
     --light-color: #{$light-color};
     --light-color-2: #{$light-color-2};
     --dark-color-1: #{$dark-color-1};
     --orange: #{$orange};
+    --lemon: #{$lemon};
     --red: #{$red};
     --white: #{$white};
     --gray-100: #{$gray-100};
-    // .bg-main {
-    //     background-color: var(--bg-main);
-    // }
 }
-// variables 
-// $bg-main : #F2F5F9;
-// dark mode 
 
 html {
     scroll-behavior: smooth;
@@ -80,6 +62,7 @@ body {
     height: 2px;
     width: 252px;
 }
+
 // font sizes
 @for $i from 10 through 50 {
     .fs-#{$i} {
@@ -108,6 +91,7 @@ body {
 .bg-white {
     background-color: var(--white) !important;
 }
+
 // color classes
 .text-orange {
     color: var(--orange);
@@ -150,17 +134,9 @@ li {
     cursor: pointer;
 }
 
-
-// dark mode 
-// [data-layout-mode="dark"] {
-//     $bg-main: green;
-//     // .bg-main {
-//     //     background-color: var(--bg-main);
-//     // }
-// }
-
 [data-topbar="dark"] {
     $bg-main: green;
+
     .bg-main {
         background-color: red !important;
     }

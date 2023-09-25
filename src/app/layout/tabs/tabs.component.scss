@@ -1,39 +1,69 @@
 // Start Tabs
-.nav {
-    background-color: #F2F7FC;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
-    border-radius: 10px;
-    transition: .3s;
-    .nav-item {
-        cursor: pointer;
+.tabs {
+    @media (max-width: 992px) {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
     }
-    .nav-link {
-        background-color: var(--light-color-2);
-        color: #222;
-        text-transform: uppercase;
+    .nav {
+        background-color: #F2F7FC;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
         border-radius: 10px;
-        font-size: 12px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80px;
-        height: 66px;
-        &:hover i {
-            animation-name: backOutDown;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
+        transition: .3s;
+        
+        @media (max-width: 992px) {
+            width: 100%;
+            border-radius: 0;
+            // border-top: 1px solid var(--orange);
+        }
+
+        .nav-item {
+            cursor: pointer;
+        }
+
+        .nav-link {
+            background-color: var(--light-color-2);
+            color: #222;
+            text-transform: uppercase;
+            border-radius: 10px;
+            font-size: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 60px;
+            @media (max-width: 767px) {
+                width: 50px;
+                height: 45px;
+            }
+            i {
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                }
+            }
+            span {
+                @media (max-width: 767px) {
+                    font-size: 8px;
+                }
+            }
+        }
+
+        .nav-link.active {
+            background-color: var(--orange);
+
+            i,
+            span {
+                color: #FFF;
+                font-weight: 500;
+            }
+
+            span {
+                font-weight: 600;
+            }
         }
     }
-    
-    .nav-link.active {
-        background-color: var(--orange);
-        color: #FFF;
-        font-weight: 600;
-        i {
-            font-weight: 500;
-            color: #FFF;
-        }
-    }
+    // End Tabs
 }
-// End Tabs
