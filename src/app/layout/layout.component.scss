@@ -1,7 +1,35 @@
-.content {
+.content-container {
+
+    .content {
+        height: 637px;
+        overflow: auto;
+        @media (max-width: 992px) {
+            height: 100%;
+        }
+    }
+
+    // Start Scrollbar
+    .content::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .content::-webkit-scrollbar-track {
+        background-color: var(--dark-color);
+        border-top-right-radius: 9px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .content::-webkit-scrollbar-thumb {
+        background-color: var(--orange);
+        border-radius: 20px;
+    }
+
+    // End Scrollbar
     @media (max-width: 992px) {
         margin-bottom: 100px;
     }
+
     @media (max-width: 768px) {
         margin-bottom: 80px;
     }

@@ -57,6 +57,30 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+// Start Custom mouse
+.cursor {
+    cursor: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #eb0867;
+    border-radius: 50%;
+} 
+// End Custom mouse
+
+// Start Scrollbar
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--light-color-2);
+}
+ 
+html::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+}
+// End Scrollbar
+
 .line {
     background-color: var(--orange);
     height: 2px;
