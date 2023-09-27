@@ -1,7 +1,24 @@
 <div class="d-flex align-items-center gap-3 mb-3">
-    <h2 class="mb-0 text-uppercase fs-30 poppins-font text-dark">Contact Me</h2>
+    <h2 class="mb-0 text-uppercase fs-25 poppins-font text-dark">Contact Me</h2>
     <div class="line"></div>
 </div>
+<h2 class="mb-0 fs-20 poppins-font text-orange my-2">let's talk</h2>
 <div>
-    <h3 class="mb-0 poppins-font fs-25 text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore quam sed dignissimos at maiores dolores, libero porro, vel laborum, architecto mollitia debitis cupiditate ea cum commodi accusamus adipisci! Quidem modi corrupti provident illo suscipit beatae exercitationem perferendis quo eos? Officia, assumenda veritatis recusandae non aliquam, magni sed est eligendi, fuga sint officiis inventore fugit minus facere error! Neque, quisquam quasi! Suscipit iste ex commodi repellendus deleniti! Officiis obcaecati error quod doloremque omnis cumque eligendi? Exercitationem quod quis nisi minus officia ratione eaque eos possimus alias ducimus fuga ex accusantium, maiores necessitatibus quos. Quaerat sapiente officia repellendus corporis, iure iusto fuga quae facilis nam saepe corrupti vel et autem sunt soluta libero? Nam blanditiis fuga dicta corporis saepe cupiditate officiis, voluptatem vel eligendi? Magnam eligendi laboriosam omnis distinctio dignissimos iste, tempora rerum cupiditate sunt vel repellat blanditiis iure veritatis nemo aspernatur. Sint obcaecati vero excepturi corporis, labore dolores facere officiis, numquam et, laudantium inventore recusandae. Excepturi dolor in dolores labore dignissimos autem assumenda enim minima doloribus, a cum ab nisi ratione. Labore vero dolore voluptates iusto atque qui in dolor omnis sunt a, cupiditate, minima provident, sequi placeat nulla maiores quasi deleniti dolores sapiente minus quam eveniet! Vel, molestiae sunt?</h3>
+    <form [formGroup]="contactForm">
+        <div class="row mb-2">
+            <input type="text" placeholder="Your Name" formControlName="name">
+            <span *ngIf="controls['name'].errors && controls['name'].touched" class="invalid text-danger">error icon</span>
+        </div>
+        <div class="row mb-2">
+            <input type="email" placeholder="Your E-mail" formControlName="email">
+            <span *ngIf="controls['email'].errors && controls['email'].touched" class="invalid text-danger">error icon</span>
+        </div>
+        <div class="row mb-4">
+            <textarea name="" cols="30" rows="4" placeholder="How Can I Help You?" formControlName="message"></textarea>
+            <span *ngIf="controls['message'].errors && controls['message'].touched" class="invalid text-danger">error icon</span>
+        </div>
+        <div class="d-flex justify-content-end align-items-center mb-2">
+            <input type="button" class="btn btn-danger" value="SEND" (click)="submitForm()">
+        </div>
+    </form>
 </div>

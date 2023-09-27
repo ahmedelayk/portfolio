@@ -3,12 +3,13 @@
 :root {
     $light-color: #F2F5F9;
     $light-color-2: #E1E8EF;
-    $dark-color-1: #1a10037e;
+    $dark-color-1: #1d1b18;
     $orange: #FF9C1B;
     $lemon: #20e261;
-    $red: #EC1B09;
+    $red: #eb0867;
     $white: #FFF;
     $gray-100: #212529;
+    $shadow: rgba(100, 100, 111, 0.2);
     // variables
     --light-color: #{$light-color};
     --light-color-2: #{$light-color-2};
@@ -20,6 +21,7 @@
     --body-color: #{$light-color-2};
     --white: #{$white};
     --gray-100: #{$gray-100};
+    --shadow: #{$shadow};
     // fonts
     --pacifico-font: 'Pacifico', cursive;
     --poppins-font: 'Poppins', sans-serif;
@@ -35,6 +37,7 @@
     $red: #eb0867;
     $white: #292e32;
     $gray-100: #ced4da;
+    $shadow: rgb(0 0 0 / 23%);
     // variables
     --light-color: #{$light-color};
     --light-color-2: #{$light-color-2};
@@ -44,6 +47,7 @@
     --red: #{$red};
     --white: #{$white};
     --gray-100: #{$gray-100};
+    --shadow: #{$shadow};
 }
 
 html {
@@ -85,6 +89,10 @@ html::-webkit-scrollbar-thumb {
     background-color: var(--orange);
     height: 2px;
     width: 252px;
+    animation-name: line;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 // font sizes
@@ -173,3 +181,14 @@ li {
 
 
 // Animations
+@keyframes line {
+    0% {
+        transform: translateX(50px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}

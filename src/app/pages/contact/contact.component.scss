@@ -1,0 +1,67 @@
+form {
+
+    .row {
+        position: relative;
+
+        span {
+            width: fit-content;    
+        }
+
+        .invalid {
+            position: absolute;
+            top: 50%;
+            left: 90%;
+            transform: translateY(-50%);
+        }
+    }
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+        position: relative;
+        background-color: transparent;
+        padding: 8px 12px;
+        border: none;
+        border-bottom: 1px solid #e66d9f;
+        color: var(--gray-100);
+        transition: .3s;
+
+        &:focus {
+            outline: none;
+            border-bottom-color: #eb0867;
+        }
+
+        &::placeholder {
+            color: #838383;
+        }
+
+        &.ng-touched.ng-invalid {
+            border-bottom-color: rgb(209, 24, 24);
+        }
+
+        // &::after {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     content: "";
+        //     background-color: rebeccapurple;
+        //     border-style: solid;
+        //     border-width: 10px;
+        //     border-color: #eb0867;
+        //     width: 100px;
+        //     height: 20px;
+        // }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .btn-danger {
+        background-color: var(--red);
+        border: none;
+        transition: .3s;
+
+        // &:hover {}
+    }
+}
