@@ -1,6 +1,6 @@
 aside {
     background-color: #FFF;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     position: relative;
     padding-top: 140px;
     padding-bottom: 25px;
@@ -33,9 +33,9 @@ aside {
 
                 .link {
                     background-color: var(--light-color-2);
-                    border-radius: 8px;
-                    width: 50px;
-                    height: 50px;
+                    border-radius: .5rem;
+                    width: 3.125rem;
+                    height: 3.125rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -50,8 +50,6 @@ aside {
                         animation-name: fadeInDown;
                         animation-duration: .6s;
                     }
-
-                    // i {}
                 }
             }
         }
@@ -60,9 +58,9 @@ aside {
     .contact {
         background-color: var(--light-color);
         width: 80%;
-        border-radius: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        border-radius: 1.25rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
         // display: flex;
         // justify-content: center;
 
@@ -70,8 +68,8 @@ aside {
             padding-left: 0;
 
             li {
-                padding-top: 10px;
-                padding-bottom: 10px;
+                padding-top: .625rem;
+                padding-bottom: .625rem;
                 transition: .3s;
 
                 &:not(:last-child) {
@@ -86,35 +84,35 @@ aside {
                     color: var(--orange);
                 }
 
-                &:last-child {
-                    .down-btn {
-                        padding: 10px 20px;
-                        border-radius: 40px;
-                        border: none;
-                        display: flex;
-                        align-items: center;
-                        gap: 10px;
-                        background-color: var(--orange);
-                        color: #FFF;
-                        transition: .3s;
+                // &:last-child {
+                //     .down-btn {
+                //         padding: 10px 20px;
+                //         border-radius: 40px;
+                //         border: none;
+                //         display: flex;
+                //         align-items: center;
+                //         gap: 10px;
+                //         background-color: var(--orange);
+                //         color: #FFF;
+                //         transition: .3s;
 
-                        &:hover {
-                            background-color: var(--lemon);
-                        }
+                //         &:hover {
+                //             background-color: var(--lemon);
+                //         }
 
-                        &:hover i {
-                            animation: shakeY;
-                            animation-duration: 2s;
-                            animation-iteration-count: infinite;
-                        }
+                //         &:hover i {
+                //             animation: shakeY;
+                //             animation-duration: 2s;
+                //             animation-iteration-count: infinite;
+                //         }
 
-                        // i {
-                        //     &:hover {
-                        //     }
+                //         // i {
+                //         //     &:hover {
+                //         //     }
 
-                        // }
-                    }
-                }
+                //         // }
+                //     }
+                // }
 
                 .icon {
                     i {
@@ -135,7 +133,7 @@ aside {
                 }
 
                 &:hover .text {
-                    transform: translatex(10px);
+                    transform: translatex(.625rem);
                 }
             }
         }
@@ -151,7 +149,7 @@ aside {
 }
 
 
-// 
+// download resume button
 .button-down {
   --b: 3px;   /* border thickness */
   --s: .45em; /* size of the corner */

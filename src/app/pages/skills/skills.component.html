@@ -1,11 +1,11 @@
 <div class="d-flex align-items-center gap-3 mb-3">
-    <h2 class="mb-0 text-uppercase fs-25 poppins-font text-dark">My Skills</h2>
+    <h2 class="mb-0 text-uppercase fs-25 poppins-font text-dark">Skills</h2>
     <div class="line"></div>
 </div>
 <h2 class="fs-20 poppins-font text-orange">Technologies I've been working with recently</h2>
 <div class="my-3">
     <div class="row">
-        <div *ngFor="let skill of skills" class="col-4 col-lg-3 d-flex justify-content-center align-items-center">
+        <div *ngFor="let skill of skills" class="col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center">
             <div class="skill-card mb-3">
                 <img [src]="skill.src" [alt]="skill.name">
                 <h4 class="fs-14 fw-bold d-flex justify-content-center align-items-center logo-name" [ngStyle]="{'background-color': skill.bgColor, 'color': skill.textColor, }">{{skill.name}}</h4>

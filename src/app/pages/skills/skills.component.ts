@@ -71,7 +71,7 @@ export class SkillsComponent {
       src: "assets/skills-logos/React.png",
       name: "ReactJs",
       bgColor: "#88dded",
-      textColor: "#fff"
+      textColor: "#212121"
     },
     {
       src: "assets/skills-logos/redux.png",
