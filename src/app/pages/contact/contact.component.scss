@@ -15,6 +15,10 @@ form {
         }
     }
 
+    // &.ng-submitted {
+
+    // }
+
     input[type='text'],
     input[type='email'],
     textarea {
@@ -38,6 +42,7 @@ form {
         &.ng-touched.ng-invalid {
             border-bottom-color: rgb(209, 24, 24);
         }
+       
     }
 
     textarea {

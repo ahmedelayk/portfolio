@@ -8,6 +8,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     PagesRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SweetAlert2Module.forRoot(),
   ]
 })
 export class PagesModule { }

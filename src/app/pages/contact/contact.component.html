@@ -4,21 +4,21 @@
 </div>
 <h2 class="fs-20 poppins-font text-orange my-3">let's talk</h2>
 <div>
-    <form [formGroup]="contactForm">
+    <form [formGroup]="contactForm" (ngSubmit)="submitForm($event)">
         <div class="row mb-2">
-            <input type="text" placeholder="Your Name" formControlName="name">
-            <span *ngIf="controls['name'].errors && controls['name'].touched" class="invalid text-danger ri-error-warning-line fs-24"></span>
+            <input type="text" placeholder="Your Name" formControlName="name" name="name">
+            <span *ngIf="(controls['name'].errors && controls['name'].touched) || (isSubmitted && controls['name'].errors)" class="invalid text-danger ri-error-warning-line fs-24"></span>
         </div>
         <div class="row mb-2">
-            <input type="email" placeholder="Your E-mail" formControlName="email">
-            <span *ngIf="controls['email'].errors && controls['email'].touched" class="invalid text-danger ri-error-warning-line fs-24"></span>
+            <input type="email" placeholder="Your E-mail" formControlName="email" name="mail">
+            <span *ngIf="(controls['email'].errors && controls['email'].touched) || (isSubmitted && controls['email'].errors)" class="invalid text-danger ri-error-warning-line fs-24"></span>
         </div>
         <div class="row mb-4">
-            <textarea name="" cols="30" rows="4" placeholder="How Can I Help You?" formControlName="message"></textarea>
-            <span *ngIf="controls['message'].errors && controls['message'].touched" class="invalid text-danger ri-error-warning-line fs-24"></span>
+            <textarea name="" cols="30" rows="4" placeholder="How Can I Help You?" formControlName="message" name="message"></textarea>
+            <span *ngIf="(controls['message'].errors && controls['message'].touched) || (isSubmitted && controls['message'].errors)" class="invalid text-danger ri-error-warning-line fs-24"></span>
         </div>
         <div class="d-flex justify-content-end align-items-center mb-2">
-            <input type="button" class="btn btn-danger" value="SEND" (click)="submitForm()">
+            <input type="submit" class="btn btn-danger" value="SEND" >
         </div>
     </form>
 </div>
