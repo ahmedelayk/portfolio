@@ -47,7 +47,7 @@ aside {
                     }
 
                     &:hover i {
-                        animation-name: fadeInDown;
+                        animation-name: comeFromTop;
                         animation-duration: .6s;
                     }
                 }
@@ -143,4 +143,11 @@ aside {
 .button-down:active {
   background: var(--color);
   color: #fff;
+}
+
+
+@keyframes comeFromTop {
+    0% {
+        transform: translateY(-80px);
+    }
 }

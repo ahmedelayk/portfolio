@@ -15,6 +15,13 @@ export class ProjectsComponent {
       techUsed: ["Angular", "bootstrap", "apex-charts"]
     },
     {
+      src: "assets/projects-images/portfolio.png",
+      name: "My Portfolio",
+      codeUrl: "https://github.com/ahmedelayk/portfolio-angular",
+      demoUrl: "https://student-dashboard-sgnm-ahmedelayk.vercel.app/students",
+      techUsed: ["Angular", "bootstrap"]
+    },
+    {
       src: "assets/projects-images/student-dashboardd.png",
       name: "Students Dashboard",
       codeUrl: "https://github.com/ahmedelayk/Student-Dashboard",

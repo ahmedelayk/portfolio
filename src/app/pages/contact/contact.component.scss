@@ -1,6 +1,36 @@
+.contact-card {
+    flex-grow: 1;
+}
+
+.row {
+    --bs-gutter-x: 0;
+
+    .contact-link {
+        background-color: var(--light-color-2);
+        padding: 1rem;
+
+        &:nth-child(odd) {
+            border-left: 3px solid var(--orange);
+        }
+
+        @media (max-width: 768px) {
+            border-left: 3px solid var(--orange);
+        }
+
+        & span a {
+            transition: .3s;
+        }
+
+        & span a:hover {
+            color: var(--orange) !important;
+            transform: translateY(-3px);
+        }
+    }
+}
+
 form {
 
-    .row {
+    .d-flex {
         position: relative;
 
         span {
@@ -25,6 +55,7 @@ form {
         border-bottom: 1px solid #e66d9f;
         color: var(--gray-100);
         transition: .3s;
+        flex-grow: 1;
 
         &:focus {
             outline: none;
@@ -38,7 +69,7 @@ form {
         &.ng-touched.ng-invalid {
             border-bottom-color: rgb(209, 24, 24);
         }
-       
+
     }
 
     textarea {

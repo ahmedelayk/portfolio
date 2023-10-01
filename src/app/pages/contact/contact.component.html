@@ -2,19 +2,28 @@
     <h2 class="mb-0 text-uppercase fs-25 poppins-font text-dark">Contact</h2>
     <div class="line"></div>
 </div>
-<h2 class="fs-20 poppins-font text-orange my-3">let's talk</h2>
+<h2 class="fs-20 poppins-font text-orange my-3">Let's Talk</h2>
+<div class="d-flex">
+    <div class="contact-card row">
+        <h5 class="contact-link col-12 col-md-6 d-flex align-items-center poppins-font mb-2"><i class="ri-smartphone-line fs-18 me-2 text-orange"></i> <span><a class="fs-14 text-dark d-flex align-items-center" href="https://wa.me/+201210898966" target="_blank">01210898966</a></span></h5>
+        <h5 class="contact-link col-12 col-md-6 d-flex align-items-center poppins-font mb-2"><i class="ri-mail-line fs-18 me-2 text-orange"></i> <span><a class="fs-14 text-dark d-flex align-items-center" href="mailto:ahmedelayek7@gmail.com" target="_blank">ahmedelayek7@gmail.com</a></span></h5>
+        <h5 class="contact-link col-12 col-md-6 d-flex align-items-center poppins-font mb-2 mb-md-0"><i class="ri-github-fill fs-18 me-2 text-orange"></i> <span><a class="fs-14 text-dark d-flex align-items-center" href="https://github.com/ahmedelayk" target="_blank">Github</a></span></h5>
+        <h5 class="contact-link col-12 col-md-6 d-flex align-items-center poppins-font mb-0"><i class="ri-linkedin-fill fs-18 me-2 text-orange"></i> <span><a class="fs-14 text-dark d-flex align-items-center" href="https://www.linkedin.com/in/ahmed-elayek/" target="_blank">LinkedIn</a></span></h5>
+    </div>
+</div>
+<h2 class="fs-20 poppins-font text-orange my-3">Send me a message</h2>
 <div>
     <form [formGroup]="contactForm" (ngSubmit)="submitForm($event)">
-        <div class="row mb-2">
+        <div class="d-flex mb-2">
             <input type="text" placeholder="Your Name" formControlName="name" name="name">
             <span *ngIf="(controls['name'].errors && controls['name'].touched) || (isSubmitted && controls['name'].errors)" class="invalid text-danger ri-error-warning-line fs-24"></span>
         </div>
-        <div class="row mb-2">
+        <div class="d-flex mb-2">
             <input type="email" placeholder="Your E-mail" formControlName="email" name="mail">
             <span *ngIf="(controls['email'].errors && controls['email'].touched) || (isSubmitted && controls['email'].errors)" class="invalid text-danger ri-error-warning-line fs-24"></span>
         </div>
-        <div class="row mb-4">
-            <textarea name="" cols="30" rows="4" placeholder="How Can I Help You?" formControlName="message" name="message"></textarea>
+        <div class="d-flex mb-4">
+            <textarea name="" cols="30" rows="2" placeholder="How Can I Help You?" formControlName="message" name="message"></textarea>
             <span *ngIf="(controls['message'].errors && controls['message'].touched) || (isSubmitted && controls['message'].errors)" class="invalid text-danger ri-error-warning-line fs-24"></span>
         </div>
         <div class="d-flex justify-content-end align-items-center mb-2">

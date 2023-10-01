@@ -4,7 +4,7 @@
         <div>
             <div class="mode-icon-container cursor-pointer light-dark-mode">
                 <i class="ri-moon-line fs-20 mode-icon" *ngIf="mode === modeKey.light" (click)="changeMode(modeKey.dark)"></i>
-                <i class="ri-sun-line fs-20 mode-icon" *ngIf="mode === modeKey.dark" (click)="changeMode(modeKey.light)"></i>
+                <i class="ri-sun-line fs-20 mode-icon text-light" *ngIf="mode === modeKey.dark" (click)="changeMode(modeKey.light)"></i>
             </div>
         </div>
     </div>
