@@ -33,15 +33,16 @@ form {
     .d-flex {
         position: relative;
 
-        span {
-            width: fit-content;
-        }
-
-        .invalid {
+        .input-icon {
             position: absolute;
             top: 50%;
-            right: 1px;
+            left: .5rem;
             transform: translateY(-50%);
+        }
+
+        &:nth-last-child(2) .input-icon {
+            top: 0;
+            transform: unset;
         }
     }
 
@@ -52,22 +53,25 @@ form {
         background-color: transparent;
         padding: 8px 12px;
         border: none;
-        border-bottom: 1px solid #e66d9f;
+        border-bottom: 1px solid var(--orange);
         color: var(--gray-100);
         transition: .3s;
         flex-grow: 1;
+        text-indent: 1.8rem;
+        font-size: 1rem;
 
         &:focus {
             outline: none;
-            border-bottom-color: #eb0867;
+            // border-bottom-color: #eb0867;
         }
 
         &::placeholder {
+            font-size: .9rem;
             color: #838383;
         }
 
         &.ng-touched.ng-invalid {
-            border-bottom-color: rgb(209, 24, 24);
+            border-bottom-color: var(--bs-danger);
         }
 
     }

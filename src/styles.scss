@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700;800&display=swap');
 
 :root {
+
     // font-size: 16px;
     @media (max-width: 768px) {
         font-size: 12px;
     }
+
     @media (max-width: 991px) {
         font-size: 14px;
     }
+
     @media (max-width: 1201px) {
         font-size: 16px;
     }
+
     @media (min-width: 1201px) {
         font-size: 18px;
     }
+
     $light-color: #F2F5F9;
     $light-color-2: #E1E8EF;
     $dark-color-1: #1d1b18;
@@ -38,9 +43,12 @@
     --gray-100: #{$gray-100};
     --shadow: #{$shadow};
     // fonts
-    --pacifico-font: 'Pacifico', cursive;
-    --poppins-font: 'Poppins', sans-serif;
-    --raleway-font: 'Raleway', sans-serif;
+    --pacifico-font: 'Pacifico',
+    cursive;
+    --poppins-font: 'Poppins',
+    sans-serif;
+    --raleway-font: 'Raleway',
+    sans-serif;
 }
 
 [mode="dark"] {
@@ -85,21 +93,23 @@ body {
     height: 10px;
     border: 1px solid #eb0867;
     border-radius: 50%;
-} 
+}
+
 // End Custom mouse
 
 // Start Scrollbar
 html::-webkit-scrollbar {
-    width: 10px;
+    width: .625rem;
 }
 
 html::-webkit-scrollbar-track {
     background-color: var(--light-color-2);
 }
- 
+
 html::-webkit-scrollbar-thumb {
     background-color: var(--orange);
 }
+
 // End Scrollbar
 
 .line {
@@ -166,17 +176,21 @@ html::-webkit-scrollbar-thumb {
     color: var(--dark-color-1);
 }
 
-
 // Font Weights
 .fw-semibold {
     font-weight: 600;
 }
 
-
 // Global
 a {
     text-decoration: none;
     color: #000;
+
+    &:focus-visible {
+        padding: .2rem;
+        border: 1px solid var(--orange);
+        outline: none;
+    }
 }
 
 li {
@@ -206,9 +220,11 @@ li {
     0% {
         transform: translateX(50px);
     }
+
     50% {
         transform: translateX(0px);
     }
+
     100% {
         transform: translateX(50px);
     }

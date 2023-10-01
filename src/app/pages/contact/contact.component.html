@@ -3,7 +3,7 @@
     <div class="line"></div>
 </div>
 <h2 class="fs-20 poppins-font text-orange my-3">Let's Talk</h2>
-<div class="d-flex">
+<div class="d-flex mb-5">
     <div class="contact-card row">
         <h5 class="contact-link col-12 col-md-6 d-flex align-items-center poppins-font mb-2"><i class="ri-smartphone-line fs-18 me-2 text-orange"></i> <span><a class="fs-14 text-dark d-flex align-items-center" href="https://wa.me/+201210898966" target="_blank">01210898966</a></span></h5>
         <h5 class="contact-link col-12 col-md-6 d-flex align-items-center poppins-font mb-2"><i class="ri-mail-line fs-18 me-2 text-orange"></i> <span><a class="fs-14 text-dark d-flex align-items-center" href="mailto:ahmedelayek7@gmail.com" target="_blank">ahmedelayek7@gmail.com</a></span></h5>
@@ -16,15 +16,15 @@
     <form [formGroup]="contactForm" (ngSubmit)="submitForm($event)">
         <div class="d-flex mb-2">
             <input type="text" placeholder="Your Name" formControlName="name" name="name">
-            <span *ngIf="(controls['name'].errors && controls['name'].touched) || (isSubmitted && controls['name'].errors)" class="invalid text-danger ri-error-warning-line fs-24"></span>
+            <i class="ri-smartphone-line fs-22 text-orange input-icon" [ngClass]="{'text-danger': (controls['name'].errors && controls['name'].touched) || (isSubmitted && controls['name'].errors)}"></i>
         </div>
         <div class="d-flex mb-2">
             <input type="email" placeholder="Your E-mail" formControlName="email" name="mail">
-            <span *ngIf="(controls['email'].errors && controls['email'].touched) || (isSubmitted && controls['email'].errors)" class="invalid text-danger ri-error-warning-line fs-24"></span>
+            <i class="ri-smartphone-line fs-22 text-orange input-icon"  [ngClass]="{'text-danger': (controls['email'].errors && controls['email'].touched) || (isSubmitted && controls['email'].errors)}"></i>
         </div>
         <div class="d-flex mb-4">
             <textarea name="" cols="30" rows="2" placeholder="How Can I Help You?" formControlName="message" name="message"></textarea>
-            <span *ngIf="(controls['message'].errors && controls['message'].touched) || (isSubmitted && controls['message'].errors)" class="invalid text-danger ri-error-warning-line fs-24"></span>
+            <i class="ri-smartphone-line fs-22 text-orange input-icon"  [ngClass]="{'text-danger': (controls['message'].errors && controls['message'].touched) || (isSubmitted && controls['message'].errors)}"></i>
         </div>
         <div class="d-flex justify-content-end align-items-center mb-2">
             <input type="submit" class="btn btn-danger" value="SEND" >

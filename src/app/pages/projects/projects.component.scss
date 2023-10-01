@@ -24,6 +24,12 @@
     flex-direction: column;
     gap: .625rem;
 
+    .name {
+      @media (max-width: 577px) {
+        font-size: .8rem;
+      }
+    }
+
     .links {
       color: var(--red);
     }
@@ -35,6 +41,9 @@
       margin-right: .375rem;
       font-weight: 600;
       font-size: .75rem;
+      @media (max-width: 577px) {
+        font-size: .6rem;
+      }
     }
   }
 
@@ -67,9 +76,14 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-
+  
   @media (max-width: 768px) {
     font-weight: 500;
+  }
+  
+  @media (max-width: 577px) {
+    padding: .1rem .4rem;
+    font-size: .7rem;
   }
 }
 
