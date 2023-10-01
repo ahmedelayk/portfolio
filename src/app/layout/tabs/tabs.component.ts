@@ -12,6 +12,5 @@ export class TabsComponent {
 
   setActiveTab(tab: string) {
     this.activeTab = tab
-    // console.log(this.activeTab)
   }
 }

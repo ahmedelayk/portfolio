@@ -1,10 +1,15 @@
 .content-container {
 
     .content {
-        height: 637px;
         overflow: auto;
         @media (max-width: 992px) {
             height: 100%;
+        }
+        @media (min-width: 992px) {
+            height: 636.02px;
+        }
+        @media (min-width: 1201px) {
+            height: 690.42px;
         }
     }
 

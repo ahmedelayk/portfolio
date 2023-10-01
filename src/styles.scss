@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700;800&display=swap');
 
 :root {
-    font-size: 16px;
+    // font-size: 16px;
     @media (max-width: 768px) {
         font-size: 12px;
     }
     @media (max-width: 991px) {
         font-size: 14px;
     }
+    @media (max-width: 1201px) {
+        font-size: 16px;
+    }
+    @media (min-width: 1201px) {
+        font-size: 18px;
+    }
     $light-color: #F2F5F9;
     $light-color-2: #E1E8EF;
     $dark-color-1: #1d1b18;
     $orange: #FF9C1B;
     $lemon: #20e261;
+    $skyBlue: #aa3aff;
     $red: #eb0867;
     $white: #FFF;
     $gray-100: #212529;
@@ -23,6 +30,7 @@
     --dark-color-1: #{$dark-color-1};
     --orange: #{$orange};
     --lemon: #{$lemon};
+    --skyBlue: #{$skyBlue};
     --red: #{$red};
     --body-bg: #{$light-color};
     --body-color: #{$light-color-2};
@@ -40,6 +48,7 @@
     $light-color-2: #212529;
     $dark-color-1: #FFF;
     $orange: #20e261;
+    $skyBlue: #20e261;
     $lemon: #FF9C1B;
     $red: #eb0867;
     $white: #292e32;
@@ -51,6 +60,7 @@
     --dark-color-1: #{$dark-color-1};
     --orange: #{$orange};
     --lemon: #{$lemon};
+    --skyBlue: #{$skyBlue};
     --red: #{$red};
     --white: #{$white};
     --gray-100: #{$gray-100};
@@ -96,10 +106,6 @@ html::-webkit-scrollbar-thumb {
     background-color: var(--orange);
     height: 1px;
     width: 100%;
-    // animation-name: line;
-    // animation-duration: 10s;
-    // animation-iteration-count: infinite;
-    // animation-timing-function: linear;
 }
 
 // font sizes
@@ -136,6 +142,14 @@ html::-webkit-scrollbar-thumb {
     color: var(--orange);
 }
 
+.text-lemon {
+    color: var(--lemon);
+}
+
+.text-sky {
+    color: var(--skyBlue);
+}
+
 .text-red {
     color: var(--red);
 }
@@ -154,10 +168,6 @@ html::-webkit-scrollbar-thumb {
 
 
 // Font Weights
-.fw-medium {
-    font-weight: 500;
-}
-
 .fw-semibold {
     font-weight: 600;
 }

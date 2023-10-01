@@ -25,9 +25,7 @@ export class TopbarComponent implements OnInit {
   };
 
   changeMode(mode: string) {
-    // console.log(mode);
     this.mode = mode;
-    // this.eventService.broadcast(reserved.changeMode, mode);
     switch (mode) {
       case reserved.lightMode:
         document.body.setAttribute("mode", reserved.lightMode);

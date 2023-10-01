@@ -31,11 +31,8 @@ export class ContactComponent implements OnInit{
   submitForm(e: Event) {
     this.isSubmitted = true;
     if(this.contactForm.valid) {
-      // console.log(this.contactForm.value);
-      // console.log(e.target as HTMLFormElement);
       emailjs.sendForm('service_nmo8fmg', 'template_0xbi3pa', e.target as HTMLFormElement, 'h8sbkyHvTNBnIjwMy')
       .then((result: EmailJSResponseStatus) => {
-        // console.log(result.text);
         this.isSubmitted = false;
         Swal.fire({
           customClass: {
@@ -66,7 +63,6 @@ export class ContactComponent implements OnInit{
         },
         buttonsStyling: false,
         icon: 'error',
-        // title: `Thank You ${this.contactForm.value.name}!`,
         title: 'Please, sure that you fill the form right.',
         width: '37.5rem',
         padding: '3em',

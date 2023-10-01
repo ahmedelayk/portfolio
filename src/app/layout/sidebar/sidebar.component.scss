@@ -61,8 +61,6 @@ aside {
         border-radius: 1.25rem;
         padding-left: 1.25rem;
         padding-right: 1.25rem;
-        // display: flex;
-        // justify-content: center;
 
         ul {
             padding-left: 0;
@@ -84,36 +82,6 @@ aside {
                     color: var(--orange);
                 }
 
-                // &:last-child {
-                //     .down-btn {
-                //         padding: 10px 20px;
-                //         border-radius: 40px;
-                //         border: none;
-                //         display: flex;
-                //         align-items: center;
-                //         gap: 10px;
-                //         background-color: var(--orange);
-                //         color: #FFF;
-                //         transition: .3s;
-
-                //         &:hover {
-                //             background-color: var(--lemon);
-                //         }
-
-                //         &:hover i {
-                //             animation: shakeY;
-                //             animation-duration: 2s;
-                //             animation-iteration-count: infinite;
-                //         }
-
-                //         // i {
-                //         //     &:hover {
-                //         //     }
-
-                //         // }
-                //     }
-                // }
-
                 .icon {
                     i {
                         transition: .3s;
@@ -123,10 +91,6 @@ aside {
                 &:hover {
                     cursor: cell;
                 }
-
-                // &:hover .icon>i {
-                //     color: #0077b5;
-                // }
 
                 .text {
                     transition: .3s;

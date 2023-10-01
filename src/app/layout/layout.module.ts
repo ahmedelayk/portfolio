@@ -6,8 +6,6 @@ import { RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout.component';
 import { TabsComponent } from './tabs/tabs.component';
 
-
-
 @NgModule({
   declarations: [
     TopbarComponent,

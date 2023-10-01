@@ -1,6 +1,16 @@
 .service-card {
-    padding: 4px;
+    padding: .5rem;
     border-radius: .625rem;
-    background-color: var(--light-color-2);
+    background-color: var(--light-color);
     text-align: center;
+    transition: .3s;
+    
+    .icon-img {
+        width: 6.5rem;
+    }
+    
+    &:hover {
+        background-color: var(--light-color-2);
+    }
+    
 }

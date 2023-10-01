@@ -2,13 +2,8 @@
     <h2 class="mb-0 text-uppercase fs-25 poppins-font text-dark">About</h2>
     <div class="line"></div>
 </div>
-<!-- <h2 class="mb-0 fs-20 poppins-font text-orange my-2">Who am I?</h2> -->
 <h2 class="fs-20 poppins-font text-orange">Welcome to my portfolio!</h2>
 <div>
-    <!-- <h3 class="mb-0 poppins-font fs-15 text-orange">Hello, I'm Ahmed Elayek, Front-end Developer</h3> -->
-    <!-- <h3 class="mb-0 poppins-font fs-15 text-red">Hello! I'm Daniel Curry. Web designer from USA, California, San
-        Francisco. I have rich experience in web site design and building, also I am good at wordpress. I love to talk
-        with you about our unique.</h3> -->
     <p class="mb-0 fs-16 text-dark mb-2">
         I'm Ahmed Elayek, a passionate frontend developer with a knack for turning ideas into interactive, user-friendly
         websites and web applications. With a strong foundation in HTML, CSS, TypeScript and Angular, I specialize in
@@ -18,29 +13,13 @@
     </p>
     <h2 class="fs-20 poppins-font text-orange">What I do!</h2>
     <div class="row">
-        <div class="col-6 col-lg-4 p-2">
+        <div class="col-12 col-sm-6 col-xlg-4 p-2" *ngFor="let service of services">
             <div class="service-card">
-                <i class="ri-article-line fs-40 text-dark"></i>
-                <h4 class="fs-18 text-orange">Responsive Design</h4>
-                <p class="fs-12 text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, distinctio.</p>
-            </div>
-        </div>
-        <div class="col-6 col-lg-4 p-2">
-            <div class="service-card">
-                <i class="ri-article-line fs-40 text-dark"></i>
-                <h4 class="fs-18 text-orange">Responsive Design</h4>
-                <p class="fs-12 text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, distinctio.</p>
-            </div>
-        </div>
-        <div class="col-6 col-lg-4 p-2">
-            <div class="service-card">
-                <i class="ri-article-line fs-40 text-dark"></i>
-                <h4 class="fs-18 text-orange">Responsive Design</h4>
-                <p class="fs-12 text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, distinctio.</p>
+                <img [src]="service.icon" alt="service icon" class="icon-img mb-2">
+                <h4 class="fs-16 fw-bold text-sky">{{service.name}}</h4>
+                <h6 class="fs-12 fw-semibold text-red">{{service.caption}}</h6>
+                <p class="fs-12 text-dark">{{service.description}}</p>
             </div>
         </div>
     </div>
 </div>
-
-
-<!-- I'm passionate about cutting-edge, pixel-perfect, beutiful interfaces and intuitively implemented UX  -->
