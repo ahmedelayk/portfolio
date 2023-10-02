@@ -1,27 +1,21 @@
-# PortfolioAngular
+# Ahmed Elayek Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Welcome to my portfolio! This project showcases my skills, projects, and expertise in the field of frontend development. You can use this portfolio as a reference to understand my capabilities and view my work samples.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Responsive Design:** The portfolio is designed to work seamlessly across various devices and screen sizes, ensuring a great user experience on desktops, tablets, and smartphones.
+- **Project Showcase:** Browse through my showcased projects with detailed descriptions, images, and links to live demos or repositories.
+- **Skills Highlight:** Discover the frontend technologies and skills I specialize in, including HTML, CSS, JavaScript, Angular, and Bootstrap.
+- **Contact Information:** Easily find my contact details to get in touch for collaboration or job opportunities.
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Angular](https://angular.io) - Frontend framework for building web applications
+- [Bootstrap](https://getbootstrap.com) - For responsive design and UI components
+- [Remixicon](https://remixicon.com) - For icons
