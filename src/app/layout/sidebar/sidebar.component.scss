@@ -16,13 +16,8 @@ aside {
         width: 200px;
     }
 
-    .name {
-        color: #0B0909;
-    }
-
     .title {
         font-weight: 500;
-        color: #0b09097a;
     }
 
     .social {
@@ -109,7 +104,7 @@ aside {
 }
 
 .github-color {
-    color: #0B0909;
+    color: var(--gray-100);
 }
 
 
